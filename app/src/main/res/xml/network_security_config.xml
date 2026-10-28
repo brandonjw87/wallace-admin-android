@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The WALLACE Agent speaks plain HTTP on the home LAN / Tailscale only (Tailscale itself is WireGuard-encrypted).
+     The app refuses any host outside 192.168.x / 10.x / 172.16-31.x / 192.0.2.22/10 / *.ts.net in code (HostRules.kt). -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
